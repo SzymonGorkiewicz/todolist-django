@@ -1,11 +1,12 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from .models import ToDoList
 
-
-class CreateList(forms.Form):
-    name=forms.CharField(label="name", max_length=200)
-
+class CreateList(forms.ModelForm):
+    class Meta:
+        model=ToDoList
+        fields=['name_of_list']
 
 class CreateUser(UserCreationForm):
     class Meta:

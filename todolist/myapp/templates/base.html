@@ -24,6 +24,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+          {% if user.is_authenticated %}
           <li class="nav-item">
             <a class="nav-link" href="/create">Create</a>
           </li>
@@ -32,21 +33,15 @@
               View
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              {% block action %}
+
+              {% endblock %}
             </div>
           </li>
-
-          {% if user.is_authenticated %}
-            <li class="login-button">
-              <a class="btn btn-primary" href="/logout" role="button">Logout</a>
-            </li>>
-          {% else %}
-            <li class="login-button">
-              <a class="btn btn-primary" href="/login" role="button">Login</a>
-            </li>>
           {% endif %}
+          {% block logging %}
+
+          {% endblock %}
         </ul>
       </div>
     </nav><!-- jQuery first, then Popper.js, then Bootstrap JS -->

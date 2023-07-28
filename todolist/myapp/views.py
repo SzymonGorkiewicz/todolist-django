@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import CreateUser, CreateList
+from .models import ToDoList, ItemInList
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 
@@ -7,17 +8,27 @@ from django.contrib.auth import authenticate, login, logout
 
 
 def home(request):
-    return render(request, "home.html")
+    list=ToDoList.objects.all()
+    return render(request, "home.html", {"lists":list})
 
 
 def create(request):
-    form = CreateList()
+    form=CreateList
     if request.method == "POST":
         form = CreateList(request.POST)
         if form.is_valid():
-            form.save()
+            n=form.cleaned_data["name_of_list"]
+            t=ToDoList(name_of_list=n)
+            t.save()
+            request.user.todolist.add(t)
             return redirect('/home')
     return render(request, 'create.html', {"form": form})
+
+
+def view_list(request, id):
+    list=ToDoList.objects.get(id=id)
+    items=ItemInList.objects.all()
+    return render(request, 'view.html', {"lists": list, "form": items})
 
 
 def register(request):

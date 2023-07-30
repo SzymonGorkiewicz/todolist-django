@@ -17,6 +17,4 @@ class CreateItem(forms.ModelForm):
     class Meta:
         model=ItemInList
         fields=['name_of_item', 'is_complete']
-        widgets={
-            'is_complete': forms.CheckboxInput()
-        }
+

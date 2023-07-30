@@ -6,7 +6,7 @@ body,
 			background: #6A5ACD !important;
 		}
 		.user_card {
-			width: 350px;
+			width: 500px;
 			margin-top: auto;
 			margin-bottom: auto;
 			background: #191970;
@@ -34,6 +34,9 @@ body,
 			background: #33ccff !important;
 			color: white !important;
 		}
+		.btn-primary:hover{
+		    background-color: #FF7F50;
+		}
 		.login_btn:focus {
 			box-shadow: none !important;
 			outline: 0px !important;
@@ -53,5 +56,22 @@ body,
 			outline: 0px !important;
 		}
 		.listitems {
-		    color: white;
-		}
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .positioning {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .fnkasdnf {
+            display: grid;
+            grid-template-columns: 220px 30px;
+            column-gap: 100px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }

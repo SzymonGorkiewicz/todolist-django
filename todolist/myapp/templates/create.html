@@ -2,6 +2,13 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}Register Page{% endblock %}
+{% block action %}
+{% for list in lists %}
+<a class="dropdown-item" href="/{{list.id}}">{{list.name_of_list}}</a>
+{% empty %}
+<h1>nolist</h1>
+{% endfor %}
+{% endblock %}
 {% block content %}
 <html>
 

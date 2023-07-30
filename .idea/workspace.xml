@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57a2c8f7-3262-4686-a57b-db65bee31f50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/todolist/myapp/templates/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist/myapp/static/view.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist/myapp/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist/myapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/myapp/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todolist/myapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/myapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todolist/myapp/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/myapp/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todolist/myapp/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/myapp/templates/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todolist/myapp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/myapp/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist/myapp/templates/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/myapp/templates/view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todolist/myapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/myapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todolist/myapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/myapp/views.py" afterDir="false" />
     </list>
@@ -37,16 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/sgork/PycharmProjects/django-todolist/virtenv/Scripts",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sgork/PycharmProjects/django-todolist/virtenv/Scripts&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PythonContentEntriesConfigurable&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sgork\PycharmProjects\django-todolist\todolist\myapp\images" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

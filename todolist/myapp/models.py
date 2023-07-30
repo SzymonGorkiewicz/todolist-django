@@ -12,8 +12,8 @@ class ToDoList(models.Model):
 
 
 class ItemInList(models.Model):
-    list=models.ForeignKey(ToDoList, on_delete=models.CASCADE)
-    name_of_item=models.CharField(max_length=100)
+    list=models.ForeignKey(ToDoList, on_delete=models.CASCADE, related_name='iteminlist')
+    name_of_item=models.CharField(max_length=30)
     is_complete=models.BooleanField(default=False)
 
     def __str__(self):

@@ -18,3 +18,6 @@ class ItemInList(models.Model):
 
     def __str__(self):
         return self.name_of_item
+
+    def delete_item(self):
+        self.delete()

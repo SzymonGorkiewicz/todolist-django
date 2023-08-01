@@ -16,5 +16,9 @@ class CreateUser(UserCreationForm):
 class CreateItem(forms.ModelForm):
     class Meta:
         model=ItemInList
-        fields=['name_of_item', 'is_complete']
+        fields=['name_of_item']
 
+class ItemSave(forms.ModelForm):
+    class Meta:
+        model=ItemInList
+        fields=['is_complete']

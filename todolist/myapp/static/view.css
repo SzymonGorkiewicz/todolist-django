@@ -35,8 +35,9 @@ body,
 			color: white !important;
 		}
 		.btn-primary:hover{
-		    background-color: #FF7F50;
+		    background-color: #483D8B;
 		}
+
 		.login_btn:focus {
 			box-shadow: none !important;
 			outline: 0px !important;
@@ -63,11 +64,11 @@ body,
             padding-bottom: 20px;
         }
 
-        .positioning {
+        .positioning2 {
             margin-top: 10px;
             font-size: 20px;
         }
-        .fnkasdnf {
+        .positioning {
             display: grid;
             grid-template-columns: 220px 30px;
             column-gap: 100px;

@@ -4,9 +4,9 @@
 {% block title %}View Page{% endblock %}
 {% block action %}
 {% for list in lists2 %}
-<a class="dropdown-item" href="/{{list.id}}">{{list.name_of_list}}</a>
+<a class="dropdown-item" href="/{{list.id}}" xmlns="http://www.w3.org/1999/html">{{list.name_of_list}}</a>
 {% empty %}
-<h1>nolist</h1>
+<a href="/create">Create your first list</a>
 {% endfor %}
 {% endblock %}
 {% block content %}
@@ -25,10 +25,7 @@
 		<div class="d-flex justify-content-center h-100">
 			<div class="user_card">
 				<div class="d-flex justify-content-center">
-
 					<h3 id="form-title">{{lists}}</h3>
-
-
 				</div>
 				<div class="d-flex justify-content-center form_container">
 					<form method="POST" action="">
@@ -36,37 +33,38 @@
 						<div class="input-group mb-3">
 							<div class="listitems">
 							{% for item in items %}
-								<div class="fnkasdnf"><div class="positioning"><p>{{item}}</p></div>{{form.is_complete}}</div>
+								<div class="positioning"><div class="positioning2"><p>{{item}}</p><a href="{% url 'delete_item' item.id %}">Delete</a></div>
+									<input type="checkbox" name="item_id" id="item_{{ item.id }}" {% if item.is_complete %}checked{% endif %} value="{{ item.id }}">
+								</div>
 							{% endfor %}
+							<button class="btn btn-primary" type="submit">Save</button>
 							</div>
 						</div>
-						{{form.name_of_item}}
-				   		<div class="d-flex justify-content-center mt-3 login_container">
-				 			<input class="btn btn-primary" type="submit" value="Add">
-				   		</div>
 					</form>
 				</div>
+				<form method="POST" action="">
+					{% csrf_token %}
+					<div class="d-flex justify-content-center mt-3 login_container">
+						{{form1.name_of_item}}
+						<button class="btn btn-primary" type="submit" name="add_item">Add</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
 	<script>
 		var form_fields = document.getElementsByTagName('input')
-		form_fields[1].placeholder='Item name..';
+		form_fields[0].placeholder='Item name..';
 		for (var field in form_fields){
 			form_fields[field].className += ' form-control'
 		}
 	</script>
 </body>
 </html>
-{% block logging %}
-{% if user.is_authenticated %}
-            <li class="login-button">
-              <a class="btn btn-primary" href="/logout" role="button">Logout</a>
-            </li>>
-{% else %}
-            <li class="login-button">
-              <a class="btn btn-primary" href="/login" role="button">Login</a>
-            </li>>
-{% endif %}
+
 {% endblock %}
+{% block logging %}
+<li class="login-button">
+    <a class="btn btn-primary" href="/logout" role="button">Logout</a>
+</li>>
 {% endblock %}

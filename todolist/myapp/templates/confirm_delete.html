@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<h1>Potwierdź usunięcie elementu "{{ item.name_of_item }}"</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Potwierdź usunięcie</button>
+</form>
+
+<a href="{% url 'view' id=item.list.id %}">Powrót do listy</a>

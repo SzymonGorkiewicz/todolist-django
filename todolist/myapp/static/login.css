@@ -55,15 +55,11 @@ body,
 			outline: 0px !important;
 		}
 
-		#messages{
-			background-color: grey;
-			color: #fff;
-			padding: 10px;
-			margin-top: 10px;
+		.message{
+			color: white;
+			font-size: 20px;
+			font-family: cursive;
 		}
 		.redirect{
-		    color: white !important;
-		}
-		.message{
 		    color: white !important;
 		}

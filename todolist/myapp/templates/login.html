@@ -42,9 +42,14 @@
 				   			</div>
 					</form>
 				</div>
-				{% for message in messages %}
-					<p class="message">{{message}}</p>
-				{% endfor %}
+				<br>
+				<div class="mt-4">
+					<div class="d-flex justify-content-center links">
+						{% for message in messages %}
+							<p class="message">{{message}}</p>
+						{% endfor %}
+					</div>
+				</div>
 				<div class="mt-4">
 					<div class="d-flex justify-content-center links">
 						<p class="redirect">Dont't have an account?</p> <a href="/register" class="ml-2">Sign Up</a>

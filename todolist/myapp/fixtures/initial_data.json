@@ -1,0 +1,54 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "Jack",
+            "email": "Jack@example.com",
+            "password": "pbkdf2_sha256$600000$alp11G7eDB5RWaNeF0rJy4$KWu0TFDswZLYQKw0r7+8YTV16GgecJrYnhlgRHvS8aY="
+        }
+    },
+    {
+        "model": "myapp.todolist",
+        "pk": 1,
+        "fields": {
+            "owner": 1,
+            "name_of_list": "Lista zakupów"
+        }
+    },
+    {
+        "model": "myapp.todolist",
+        "pk": 2,
+        "fields": {
+            "owner": 1,
+            "name_of_list": "Zadania do wykonania"
+        }
+    },
+    {
+        "model": "myapp.iteminlist",
+        "pk": 1,
+        "fields": {
+            "list": 1,
+            "name_of_item": "Mleko",
+            "is_complete": false
+        }
+    },
+    {
+        "model": "myapp.iteminlist",
+        "pk": 2,
+        "fields": {
+            "list": 1,
+            "name_of_item": "Chleb",
+            "is_complete": true
+        }
+    },
+    {
+        "model": "myapp.iteminlist",
+        "pk": 3,
+        "fields": {
+            "list": 2,
+            "name_of_item": "Zadanie 1",
+            "is_complete": false
+        }
+    }
+]

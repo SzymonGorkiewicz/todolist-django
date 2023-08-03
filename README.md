@@ -57,10 +57,12 @@ You can log-in through prepared user:
 
 Or you can create your own user by clicking link above the log-in section
 
-![img.png](img.png)
+![image](https://github.com/SzymonGorkiewicz/todolist-django/assets/92310752/adc2a0fb-4e26-4d19-85aa-bfee136f7fcf)
+
 
 Example gif:
-![Animation.gif](..%2F..%2FDesktop%2FAnimation.gif)
+![Animation](https://github.com/SzymonGorkiewicz/todolist-django/assets/92310752/c46ec8cb-2a53-4601-ac3c-61e4dd562a47)
+
 ## Contributing
 
 Pull requests are welcome.

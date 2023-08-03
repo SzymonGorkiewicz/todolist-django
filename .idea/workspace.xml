@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="57a2c8f7-3262-4686-a57b-db65bee31f50" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist/myapp/fixtures/initial_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/myapp/fixtures/initial_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist/myapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/myapp/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist/myapp/static/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/myapp/static/register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist/myapp/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/myapp/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
